@@ -1,0 +1,24 @@
+{
+  "name": "random-json",
+  "version": "1.0.0",
+  "description": "i don't want anyone to visit this repooooo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arian0zen/random-json.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arian0zen/random-json/issues"
+  },
+  "homepage": "https://github.com/arian0zen/random-json#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "node-fetch": "^2.6.7"
+  }
+}
