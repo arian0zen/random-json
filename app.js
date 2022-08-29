@@ -1,4 +1,4 @@
-
+const fetch = require('node-fetch');
 const express = require("express");
 const app = express();
 
@@ -71,12 +71,16 @@ const fetchDailyCodingChallenge = async () => {
 
 app.get("/", async (req, res) => {
     const ok = await syncLeetCodeCodingChallenge();
-    console.log(ok);
-    res.send(ok);
+    res.json(ok);
   });
 
 
-
-app.listen(80, () => {
-    console.log("listening on port 80");
+  let port = process.env.PORT;
+  if (port == null || port == ""){
+	port = 3000;
+  }
+  
+  app.listen(port, () => {
+	console.log("listening on port " + port);
   });
+  
