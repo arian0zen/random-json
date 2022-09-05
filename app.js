@@ -6,6 +6,7 @@ app.use(express.static("public"));
 
 
 
+
 const LEETCODE_API_ENDPOINT = "https://leetcode.com/graphql";
 const DAILY_CODING_CHALLENGE_QUERY = `
 query questionOfToday {
